@@ -1,0 +1,46 @@
+
+10 rem die roll
+12 dim ch(4,3)
+15 vl=6:tb=14
+20 :
+30 gosub360:gosub310
+40 dc=int(rnd(0)*vl)+1
+50 print"...."
+70 :
+80 for rw=0to3
+90 for co=1to3
+100 read ch(rw,co)
+115 next co:next rw
+120 :
+125 printtab(8)"...the random die roll i
+s..."
+126 print
+130 forrw=0to3
+140 forco=1to3
+210 print tab(14)chr$(ch(rw,co));
+212 if ch(rw,co)=112 or ch(rw,co)=167 th
+en print
+230 next
+240 next
+242 poke214,11:print:poke211,15:poke646,
+dc:printdc
+245 end
+250 :
+300 rem gosub to position number
+310 printchr$(147)
+320 poke53280,3:poke53281,0:poke646,7
+330 return
+340 :
+350 rem title screen
+360 printchr$(147):poke214,7:print:poke2
+11,10:poke646,6
+370 print"random die generator"
+390 poke214,10:print:poke211,8:print".pr
+ess .space barR to start"
+400 getk$
+410 if k$=""then400
+420 if k$=chr$(32) then return
+430 goto 400
+1000 data 111,163,163,112
+1010 data 165,32,32,167
+1020 data 108,164,164,250
