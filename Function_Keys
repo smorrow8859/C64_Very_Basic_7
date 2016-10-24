@@ -1,0 +1,10 @@
+
+10 geta$
+20 ifa$=""thengoto10
+30 ifa$=chr$(133)thenprint"function key
+1"
+40 ifa$=chr$(137)thenprint"function key
+f2"
+50 ifa$=chr$(134)thenprint"function key
+f3"
+100 goto 10
