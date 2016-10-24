@@ -1,0 +1,7 @@
+
+1 rem val example
+2 rem :
+5 printchr$(147)
+10 a$="32"
+20 a=val(a$)
+30 print"the value of ";a$" is";a
