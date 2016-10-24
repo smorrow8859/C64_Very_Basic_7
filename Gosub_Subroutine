@@ -1,0 +1,11 @@
+
+10 a$="subroutine":b$="program"
+20 for j=1 to 5
+30 input"enter a number";x
+40 gosub 100
+50 print b$:print
+60 next
+70 end
+100 printa$:print
+110 z=x~2:print z
+120 return
