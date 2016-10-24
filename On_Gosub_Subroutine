@@ -1,0 +1,12 @@
+
+10 print "enter a number between one and
+ five"
+20 input x
+30 on x gosub 100,200,300,400,500,600
+40 stop
+100 print "your number was 1":return
+200 print "your number was 2":return
+300 print "your number was 3":return
+400 print "your number was 4":return
+500 print "your number was 5":return
+600 print"your number was 100":return
